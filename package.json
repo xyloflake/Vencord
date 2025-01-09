@@ -55,6 +55,8 @@
         "@types/yazl": "^2.4.5",
         "@vencord/discord-types": "link:packages/discord-types",
         "diff": "^7.0.0",
+        "discord-types": "^1.3.26",
+        "electron": "^33.3.1",
         "esbuild": "^0.25.1",
         "eslint": "9.20.1",
         "eslint-import-resolver-alias": "^1.1.2",
@@ -77,6 +79,7 @@
         "typescript": "^5.8.2",
         "typescript-eslint": "^8.28.0",
         "typescript-transform-paths": "^3.5.5",
+        "user-agent-data-types": "^0.4.2",
         "zip-local": "^0.3.5"
     },
     "packageManager": "pnpm@10.4.1",
