@@ -32,6 +32,8 @@ export const enum IpcEvents {
     DELETE_THEME = "VencordDeleteTheme",
     THEME_UPDATE = "VencordThemeUpdate",
 
+    GET_SETTINGS_DIR = "VencordGetSettingsDir",
+    SET_BACKGROUND_MATERIAL = "setBackgroundMaterial",
     OPEN_EXTERNAL = "VencordOpenExternal",
     OPEN_THEMES_FOLDER = "VencordOpenThemesFolder",
     OPEN_SETTINGS_FOLDER = "VencordOpenSettingsFolder",

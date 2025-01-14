@@ -103,6 +103,11 @@ ipcMain.handle(IpcEvents.OPEN_THEMES_FOLDER, () => shell.openPath(THEMES_DIR));
 ipcMain.handle(IpcEvents.OPEN_SETTINGS_FOLDER, () => shell.openPath(SETTINGS_DIR));
 
 export function initIpc(mainWindow: BrowserWindow) {
+    // we need this handler in scope of mainWindow so we can call setBackgroundMaterial
+    ipcMain.handle(IpcEvents.SET_BACKGROUND_MATERIAL, (_, backgroundMaterial) => {
+        mainWindow.setBackgroundMaterial(backgroundMaterial);
+    });
+
     let quickCssWatcher: FSWatcher | undefined;
 
     open(QUICKCSS_PATH, "a+").then(fd => {
