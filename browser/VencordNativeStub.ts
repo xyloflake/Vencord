@@ -112,6 +112,8 @@ window.VencordNative = {
             }
         },
         set: async (s: Settings) => localStorage.setItem("VencordSettings", JSON.stringify(s)),
+        getSettingsDir: async () => "LocalStorage",
+        setBackgroundMaterial: async (bm: Settings["winBackgroundMaterial"]) => localStorage.setItem("winBackgroundMaterial", bm ?? "none"),
         openFolder: async () => Promise.reject("settings:openFolder is not supported on web"),
     },
 
